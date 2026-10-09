@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>FastBite — Order for Pickup</title>
+
+  <!-- CSS (order matters) -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/overlays.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <div class="logo"><i>F</i>FastBite</div>
+      <div class="loc" id="locTxt">Pickup · Quezon City Main</div>
+      <div class="sp"></div>
+      <input class="search" id="q" placeholder="Search menu" aria-label="Search menu">
+      <button class="btn" id="cartBtn">Cart<span class="cnt" id="cnt">0</span></button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Open now · Counter pickup</div>
+      <h1>Order ahead. Pick up at the counter.</h1>
+      <p class="lead">Fresh burgers, chicken and sides made to order. Choose your items, pick a time, and collect without the wait.</p>
+      <div class="facts">
+        <div class="fact"><b>Pickup</b><span>New Manila, Quezon City</span></div>
+        <div class="fact"><b>Ready in</b><span>15–20 minutes</span></div>
+        <div class="fact"><b>Payment</b><span>GCash, card, or at counter</span></div>
+      </div>
+    </section>
+    <nav class="tabs" id="tabs" aria-label="Menu categories"></nav>
+    <section class="grid" id="grid"></section>
+  </main>
+
+  <!-- Overlays (filled by JS) -->
+  <div class="ov side" id="drawer"><div class="panel" id="drawerP"></div></div>
+  <div class="ov" id="modal"><div class="panel" id="modalP"></div></div>
+  <div class="toast" id="toast"></div>
+
+  <!-- JS (classic scripts, share the global FB namespace; order matters) -->
+  <script src="js/config.js"></script>
+  <script src="js/menu-data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui/menu.js"></script>
+  <script src="js/ui/item-dialog.js"></script>
+  <script src="js/ui/cart.js"></script>
+  <script src="js/ui/checkout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

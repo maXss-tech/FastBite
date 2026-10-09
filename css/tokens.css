@@ -1,0 +1,13 @@
+/* Design tokens: colors, theme. Change the brand color here. */
+:root{
+  --bg:#faf8f5; --surf:#fff; --ink:#1c1917; --mut:#78716c; --line:#e7e2db;
+  --acc:#d9480f; --acc2:#b43a0a; --soft:#fff1e8; --ok:#15803d; --err:#dc2626;
+  --header-h:64px;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#141211;--surf:#1d1a18;--ink:#f5f1ec;--mut:#a39a92;--line:#2e2926;--acc:#f06a2c;--acc2:#ff8a4f;--soft:#2a1a12;--ok:#4ade80}
+}
+:root[data-theme="dark"]{--bg:#141211;--surf:#1d1a18;--ink:#f5f1ec;--mut:#a39a92;--line:#2e2926;--acc:#f06a2c;--acc2:#ff8a4f;--soft:#2a1a12;--ok:#4ade80}
